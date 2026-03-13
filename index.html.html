@@ -50,14 +50,12 @@ h1{font-family:'Fredoka One',cursive;text-align:center;color:var(--navy);font-si
 .cw-layout{display:flex;gap:20px;align-items:flex-start;flex-wrap:wrap}
 .cw-grid{border-collapse:collapse;border:3px solid var(--navy);flex-shrink:0}
 .cw-grid td{
-  width:var(--cell);height:var(--cell);
-  border:1.5px solid var(--navy);padding:0;position:relative;
-  font-size:20px;font-weight:800;color:var(--navy);
-  text-align:center;vertical-align:middle;
+  width:var(--cell);height:var(--cell);border:1.5px solid var(--navy);padding:0;position:relative;
+  font-size:20px;font-weight:800;color:var(--navy);text-align:center;vertical-align:middle;
   cursor:pointer;user-select:none;background:#fff;transition:background .1s;
 }
 .cw-grid td.blk{background:var(--navy);cursor:default;border-color:var(--navy)}
-.cw-grid td.sel{background:#FFD700;border:3px solid #e09400;z-index:1;position:relative}
+.cw-grid td.sel{background:#FFD700;border:3px solid #e09400;z-index:1}
 .cw-grid td.sel-w{background:#FFF0A0;border:2px solid #f5c800}
 .cw-grid td.ok{background:#e6f8ee;color:var(--green);cursor:default}
 .cw-grid td:not(.blk):not(.ok):hover{background:#eef5ff}
@@ -69,24 +67,21 @@ h1{font-family:'Fredoka One',cursive;text-align:center;color:var(--navy);font-si
 .dbadge{background:var(--gold);color:#fff;font-size:9.5px;font-weight:800;
   padding:2px 6px;border-radius:5px;flex-shrink:0;text-transform:uppercase}
 .cpanel{flex:1;min-width:170px}
-.csec{font-family:'Fredoka One',cursive;font-size:12.5px;color:var(--blue);
-  letter-spacing:.8px;margin:10px 0 4px}
+.csec{font-family:'Fredoka One',cursive;font-size:12.5px;color:var(--blue);letter-spacing:.8px;margin:10px 0 4px}
 .csec:first-child{margin-top:0}
-.ci{font-size:12.5px;line-height:1.5;padding:4px 8px;border-radius:7px;
-  cursor:pointer;color:#444;transition:background .1s}
+.ci{font-size:12.5px;line-height:1.5;padding:4px 8px;border-radius:7px;cursor:pointer;color:#444;transition:background .1s}
 .ci:hover{background:#eef4ff}
 .ci.sel{background:#fff8d0;font-weight:700;color:var(--navy)}
 .ci.done{color:var(--green);text-decoration:line-through;opacity:.6;cursor:default}
 .ci .cn{font-weight:800;margin-right:2px;color:var(--navy)}
 .lpool{display:flex;justify-content:center;gap:6px;margin:12px 0 8px;flex-wrap:wrap}
 .lbtn{width:36px;height:36px;background:#fff;border:2px solid var(--navy);border-radius:50%;
-  font-size:14px;font-weight:800;color:var(--navy);cursor:pointer;
-  font-family:'Nunito',sans-serif;transition:all .15s}
+  font-size:14px;font-weight:800;color:var(--navy);cursor:pointer;font-family:'Nunito',sans-serif;transition:all .15s}
 .lbtn:hover{background:var(--warm);transform:scale(1.1)}
 .inp-row{display:flex;gap:9px;margin-top:7px;max-width:320px;margin-left:auto;margin-right:auto}
-.inp-row input{flex:1;padding:10px 12px;font-size:19px;font-weight:800;
-  font-family:'Nunito',sans-serif;border:3px solid var(--navy);border-radius:11px;
-  text-transform:uppercase;text-align:center;letter-spacing:4px;background:#fff;color:var(--navy);transition:border-color .2s}
+.inp-row input{flex:1;padding:10px 12px;font-size:19px;font-weight:800;font-family:'Nunito',sans-serif;
+  border:3px solid var(--navy);border-radius:11px;text-transform:uppercase;text-align:center;
+  letter-spacing:4px;background:#fff;color:var(--navy);transition:border-color .2s}
 .inp-row input:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px rgba(245,166,35,.18)}
 .inp-row input.err{border-color:var(--red);animation:shk .28s}
 @keyframes shk{0%,100%{transform:translateX(0)}30%{transform:translateX(-5px)}70%{transform:translateX(5px)}}
@@ -101,8 +96,8 @@ h1{font-family:'Fredoka One',cursive;text-align:center;color:var(--navy);font-si
 .mimg{width:50px;height:50px;object-fit:cover;border-radius:9px;border:2px solid #e4e4e4}
 .mop{font-size:21px;font-weight:800;color:var(--navy)}
 .mres{font-size:22px;font-weight:800;color:var(--blue);min-width:38px;text-align:center}
-.minp{width:76px;padding:6px 8px;font-size:19px;font-weight:800;
-  font-family:'Nunito',sans-serif;border:3px solid var(--navy);border-radius:9px;text-align:center;color:var(--navy)}
+.minp{width:76px;padding:6px 8px;font-size:19px;font-weight:800;font-family:'Nunito',sans-serif;
+  border:3px solid var(--navy);border-radius:9px;text-align:center;color:var(--navy)}
 .minp:focus{outline:none;border-color:var(--gold)}
 .mfb{text-align:center;font-size:14px;font-weight:700;margin-top:10px;min-height:20px}
 
@@ -113,56 +108,69 @@ h1{font-family:'Fredoka One',cursive;text-align:center;color:var(--navy);font-si
 .msg-words{display:flex;flex-wrap:wrap;gap:14px;justify-content:center}
 .msg-word{display:flex;gap:3px}
 .msg-lbox{display:flex;flex-direction:column;align-items:center;gap:2px}
-.msg-blank{width:24px;height:30px;background:rgba(255,255,255,.08);
-  border-bottom:3px solid rgba(255,255,255,.3);border-radius:3px 3px 0 0;
-  display:flex;align-items:center;justify-content:center;
-  font-size:14px;font-weight:800;color:#fff;transition:all .3s}
-.msg-blank.lit{background:rgba(255,255,255,.14);border-bottom-color:var(--green);
-  color:#70ffb8;animation:pop .38s cubic-bezier(.34,1.56,.64,1)}
-@keyframes pop{0%{transform:scale(.4);opacity:0}100%{transform:scale(1);opacity:1}}
-.msg-num{font-size:10px;font-weight:800;color:rgba(255,255,255,.45);line-height:1;text-align:center}
-.decoder{background:#fff;border-radius:11px;padding:10px 14px;margin:10px 0;
-  display:none;box-shadow:0 2px 7px rgba(0,0,0,.06)}
-.dec-title{font-size:10.5px;font-weight:800;color:var(--blue);letter-spacing:1px;text-transform:uppercase;margin-bottom:7px}
-.dec-chips{display:flex;flex-wrap:wrap;gap:5px}
-.chip{background:var(--warm);border:2px solid var(--gold);border-radius:7px;
-  padding:3px 8px;font-size:12px;font-weight:700;color:var(--navy);
+.msg-num{font-size:10px;font-weight:800;color:rgba(255,255,255,.55);line-height:1;text-align:center}
+.msg-input{
+  width:26px;height:30px;padding:0;background:rgba(255,255,255,.06);
+  border:none;border-bottom:3px solid rgba(255,255,255,.25);border-radius:3px 3px 0 0;
+  text-align:center;font-size:15px;font-weight:800;color:#fff;text-transform:uppercase;
+  font-family:'Nunito',sans-serif;caret-color:var(--gold);outline:none;cursor:text;
+  transition:background .2s,border-color .2s;
+}
+.msg-input:focus{background:rgba(255,255,255,.15);border-bottom-color:var(--gold)}
+.msg-input.ok-cell{border-bottom-color:var(--green);color:#70ffb8;background:rgba(61,170,112,.15)}
+.msg-input.err-cell{border-bottom-color:var(--red);color:#ff9a9a;animation:shk .28s}
+.msg-prog-lbl{font-size:12.5px;font-weight:700;color:rgba(255,255,255,.7);text-align:center;margin-top:10px}
+
+/* Cipher key panel */
+.cipher-key{background:#fff;border-radius:11px;padding:10px 14px;margin:10px 0;box-shadow:0 2px 7px rgba(0,0,0,.06)}
+.ck-title{font-size:10.5px;font-weight:800;color:var(--blue);letter-spacing:1px;text-transform:uppercase;margin-bottom:8px}
+.ck-grid{display:flex;flex-wrap:wrap;gap:5px}
+.ck-slot{min-width:38px;background:#f5f5f5;border:2px solid #e0e0e0;border-radius:7px;
+  padding:3px 6px;font-size:11px;font-weight:700;color:#bbb;text-align:center;transition:all .3s}
+.ck-slot.known{background:var(--warm);border-color:var(--gold);color:var(--navy);
   animation:pop .28s cubic-bezier(.34,1.56,.64,1)}
-.chip span{color:var(--blue)}
+.ck-slot .ck-n{font-size:9px;color:inherit;opacity:.7;display:block}
+.ck-slot .ck-l{font-size:14px;font-weight:800;display:block}
+@keyframes pop{0%{transform:scale(.4);opacity:0}100%{transform:scale(1);opacity:1}}
+.cipher-all-known{background:linear-gradient(90deg,var(--green),var(--sky));color:#fff;border-radius:9px;
+  padding:8px 14px;text-align:center;font-size:13px;font-weight:800;margin:8px 0;display:none}
+
+/* Q answer boxes */
 .qblock{background:#fff;padding:11px 14px;border-radius:11px;margin-bottom:9px;
   border:2px solid #e4e4e4;box-shadow:0 2px 5px rgba(0,0,0,.04);transition:border-color .2s}
 .qblock.answered{border-color:var(--green)}
 .qblock label{font-size:13px;font-weight:700;color:var(--navy);display:block;margin-bottom:6px}
 .ubadge{display:inline-block;font-size:9.5px;background:var(--warm);color:var(--navy);
   padding:2px 6px;border-radius:20px;font-weight:700;margin-left:4px}
-.qinp{width:100%;padding:7px 10px;font-size:13.5px;font-weight:700;
-  font-family:'Nunito',sans-serif;border:2px solid #ddd;border-radius:7px;
-  text-transform:uppercase;color:var(--navy);transition:border-color .2s}
-.qinp:focus{outline:none;border-color:var(--blue)}
-.qinp.answered{border-color:var(--green);background:#f0fff6;color:var(--green)}
+.qans-wrap{display:flex;flex-wrap:wrap;gap:4px;margin:10px 0 4px;justify-content:center;align-items:flex-end}
+.qans-space{width:14px;flex-shrink:0}
+.qans-lbox{display:flex;flex-direction:column;align-items:center;gap:2px}
+.qans-inp{
+  width:26px;height:30px;padding:0;background:#f0f4fa;border:none;border-bottom:3px solid #ccc;
+  border-radius:3px 3px 0 0;text-align:center;font-size:15px;font-weight:800;
+  color:var(--navy);text-transform:uppercase;font-family:'Nunito',sans-serif;
+  outline:none;cursor:text;transition:background .2s,border-color .2s;
+}
+.qans-inp:focus{background:#fffde7;border-bottom-color:var(--gold)}
+.qans-inp.ok-cell{border-bottom-color:var(--green);color:var(--green);background:#e6f8ee}
+.qans-inp.err-cell{border-bottom-color:var(--red);color:var(--red);animation:shk .28s}
+.qans-num{font-size:10px;font-weight:800;color:#aaa;line-height:1;text-align:center}
 
 /* ══ Fireworks overlay ══ */
-#fw-overlay{
-  display:none;position:fixed;inset:0;z-index:999;
-  background:rgba(10,20,50,.92);
-  flex-direction:column;align-items:center;justify-content:center;text-align:center;
-}
+#fw-overlay{display:none;position:fixed;inset:0;z-index:999;background:rgba(10,20,50,.92);
+  flex-direction:column;align-items:center;justify-content:center;text-align:center}
 #fw-overlay.show{display:flex}
 #fw-canvas{position:absolute;inset:0;pointer-events:none}
 .fw-msg{position:relative;z-index:2;color:#fff;padding:0 20px;max-width:560px}
 .fw-msg h2{font-family:'Fredoka One',cursive;font-size:34px;color:var(--gold);
-  text-shadow:0 0 30px rgba(245,166,35,.7);margin-bottom:14px;
-  animation:pulse 1.2s ease-in-out infinite}
+  text-shadow:0 0 30px rgba(245,166,35,.7);margin-bottom:14px;animation:pulse 1.2s ease-in-out infinite}
 @keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.04)}}
-.fw-msg .decoded-final{
-  font-family:'Fredoka One',cursive;font-size:19px;color:#fff;
+.fw-msg .decoded-final{font-family:'Fredoka One',cursive;font-size:19px;color:#fff;
   background:rgba(255,255,255,.12);border-radius:12px;padding:12px 20px;
-  margin-bottom:16px;letter-spacing:.8px;line-height:1.6;
-}
+  margin-bottom:16px;letter-spacing:.8px;line-height:1.6}
 .fw-msg p{font-size:15px;font-weight:700;color:#cce0ff;margin-bottom:20px;line-height:1.7}
 .fw-btn{background:var(--gold);color:var(--navy);border:none;border-radius:14px;
-  padding:13px 30px;font-size:16px;font-weight:800;font-family:'Nunito',sans-serif;
-  cursor:pointer;transition:all .2s}
+  padding:13px 30px;font-size:16px;font-weight:800;font-family:'Nunito',sans-serif;cursor:pointer;transition:all .2s}
 .fw-btn:hover{background:#e09400;transform:scale(1.04)}
 
 @media(max-width:560px){
@@ -172,9 +180,44 @@ h1{font-family:'Fredoka One',cursive;text-align:center;color:var(--navy);font-si
   .cw-layout{flex-direction:column}
   .cw-grid td{font-size:16px}
 }
+
+/* ══ Music Player ══ */
+#music-btn{
+  position:fixed;bottom:22px;right:22px;z-index:900;width:52px;height:52px;
+  border-radius:50%;border:none;cursor:pointer;background:var(--navy);color:#fff;font-size:22px;
+  box-shadow:0 4px 18px rgba(0,0,0,.4);transition:all .2s;display:flex;align-items:center;justify-content:center;
+}
+#music-btn:hover{background:#0e1c34;transform:scale(1.1)}
+#music-btn.playing{background:var(--gold);color:var(--navy);animation:pulse-ring 2s ease-in-out infinite}
+@keyframes pulse-ring{
+  0%,100%{box-shadow:0 4px 18px rgba(0,0,0,.4),0 0 0 0 rgba(245,166,35,.5)}
+  50%{box-shadow:0 4px 18px rgba(0,0,0,.4),0 0 0 10px rgba(245,166,35,0)}
+}
+#music-hint{
+  position:fixed;bottom:28px;right:84px;z-index:900;background:var(--navy);color:#fff;
+  font-size:11.5px;font-weight:700;padding:7px 12px;border-radius:10px;pointer-events:none;
+  opacity:1;transition:opacity 1s;white-space:nowrap;font-family:'Nunito',sans-serif;
+  box-shadow:0 2px 10px rgba(0,0,0,.3);
+}
+#music-hint::after{content:'';position:absolute;right:-6px;top:50%;transform:translateY(-50%);
+  border:6px solid transparent;border-left-color:var(--navy);border-right:0}
+#vol-bar{
+  position:fixed;bottom:22px;right:84px;z-index:900;background:var(--navy);border-radius:12px;
+  padding:10px 14px;display:none;align-items:center;gap:10px;box-shadow:0 4px 18px rgba(0,0,0,.4);
+}
+#vol-bar span{font-size:13px;color:#fff;font-weight:700;font-family:'Nunito',sans-serif}
+#vol-slider{-webkit-appearance:none;width:90px;height:5px;border-radius:3px;background:#ddd;outline:none;cursor:pointer}
+#vol-slider::-webkit-slider-thumb{-webkit-appearance:none;width:16px;height:16px;border-radius:50%;background:var(--gold);cursor:pointer}
 </style>
 </head>
 <body>
+<button id="music-btn" onclick="toggleMusic()" title="Play/Pause music">🎵</button>
+<div id="music-hint">🎶 Tap to play music!</div>
+<div id="vol-bar">
+  <span>🔊</span>
+  <input type="range" id="vol-slider" min="0" max="100" value="40" oninput="setVolume(this.value)">
+</div>
+
 <div class="wrap">
   <h1>🎂 Bernard's Birthday Adventure!</h1>
   <div class="dots">
@@ -227,21 +270,25 @@ h1{font-family:'Fredoka One',cursive;text-align:center;color:var(--navy);font-si
   <div class="stage" id="s3">
     <div class="instr">
       <strong>🔐 Cryptogram Challenge</strong><br>
-      Answer all questions about Bernard. Each correct answer
-      <strong>reveals letters</strong> in the secret message!
-      The number below each box = the letter's position in one of the answers.
+      Jawab pertanyaan tentang Bernard — tiap huruf jawaban ada di kotak dengan <em>kode angka</em> di bawahnya.
+      Kalau benar, huruf itu muncul di <strong>cipher key</strong> sebagai referensi.
+      Gunakan kode itu untuk mengisi secret message di atas — ketik sendiri satu per satu! ✍️
     </div>
     <div class="msg-box">
-      <div class="msg-title">📜 Secret Message</div>
+      <div class="msg-title">📜 Secret Message — ketik huruf di tiap kotak</div>
       <div class="msg-words" id="msgWords"></div>
+      <div class="msg-prog-lbl" id="msgProgLbl">Terisi: 0 / ? huruf</div>
     </div>
-    <div class="decoder" id="decoder">
-      <div class="dec-title">🗝 Decoded so far</div>
-      <div class="dec-chips" id="decChips"></div>
+    <div class="cipher-all-known" id="cipherAllKnown">
+      🗝 Semua cipher key terkuak! Saatnya isi secret message — kamu sudah tahu semua kodenya! 🔐
+    </div>
+    <div class="cipher-key">
+      <div class="ck-title">🗝 Cipher Key — gunakan sebagai referensi saat mengisi kotak!</div>
+      <div class="ck-grid" id="ckGrid"></div>
     </div>
     <div id="qCont"></div>
     <div class="prog-wrap" style="margin-top:14px">
-      <div class="prog-label">Answered: <span id="ac">0</span> / 9</div>
+      <div class="prog-label">Pertanyaan dijawab: <span id="ac">0</span> / 9</div>
       <div class="prog-bar"><div class="prog-fill" id="p3" style="width:0%"></div></div>
     </div>
     <button class="btn" id="unlockBtn" onclick="showFireworks()" disabled>🎁 Reveal Message!</button>
@@ -261,43 +308,48 @@ h1{font-family:'Fredoka One',cursive;text-align:center;color:var(--navy);font-si
 
 <script>
 // ═══════════════════════════════════════════════════
-//  STAGE 1 — Crossword
-//  Verified clean 7×7 grid — zero illegal adjacencies
+//  STAGE 1 — Crossword (fully connected layout)
 //
-//  . . B R A N D
-//  . . R . . E .
-//  . . E . . A .
-//  B E A R . R .
-//  A . D E N . .
-//  R . . N . . .
-//  N E R D . . .
+//  . B R A N D
+//  . . . . E .
+//  . . . . R .
+//  B R E A D .
+//  A . . . . .
+//  R . . B . .
+//  N E A R . .
+//  . A . A . .
+//  . R E N D .
+//  . N . . . .
 //
-//  Across: BRAND(0,2) BEAR(3,0) DEN(4,2) NERD(6,0)
-//  Down:   BREAD(0,2) NEAR(0,5) BARN(3,0) REND(3,3)
+//  Across: BRAND(0,1) BREAD(3,0) NEAR(6,0) REND(8,1)
+//  Down:   NERD(0,4)  BARN(3,0)  BRAN(5,3) EARN(6,1)
 // ═══════════════════════════════════════════════════
 
 const CW_WORDS = [
-  {id:0,word:'BRAND',dir:'A',r:0,c:2,num:1,clue:'What makes a product recognizable (5)'},
-  {id:1,word:'BEAR', dir:'A',r:3,c:0,num:3,clue:'Large furry forest animal (4)'},
-  {id:2,word:'DEN',  dir:'A',r:4,c:2,num:5,clue:'A cozy private room (3)'},
-  {id:3,word:'NERD', dir:'A',r:6,c:0,num:6,clue:'A highly intellectual person (4)'},
-  {id:4,word:'BREAD',dir:'D',r:0,c:2,num:1,clue:'Baked loaf made from flour (5)'},
-  {id:5,word:'NEAR', dir:'D',r:0,c:5,num:2,clue:'Not far away (4)'},
-  {id:6,word:'BARN', dir:'D',r:3,c:0,num:3,clue:'Farm storage building (4)'},
-  {id:7,word:'REND', dir:'D',r:3,c:3,num:4,clue:'To tear apart forcefully (4)'},
+  {id:0,word:'BRAND',dir:'A',r:0,c:1,num:1,clue:'What makes a product recognizable (5)'},
+  {id:1,word:'BREAD',dir:'A',r:3,c:0,num:3,clue:'Baked loaf made from flour (5)'},
+  {id:2,word:'NEAR', dir:'A',r:6,c:0,num:5,clue:'Not far away (4)'},
+  {id:3,word:'REND', dir:'A',r:8,c:1,num:7,clue:'To tear apart forcefully (4)'},
+  {id:4,word:'NERD', dir:'D',r:0,c:4,num:2,clue:'A highly intellectual person (4)'},
+  {id:5,word:'BARN', dir:'D',r:3,c:0,num:3,clue:'Farm storage building (4)'},
+  {id:6,word:'BRAN', dir:'D',r:5,c:3,num:4,clue:'Outer husk of grain (4)'},
+  {id:7,word:'EARN', dir:'D',r:6,c:1,num:6,clue:'To receive money for your work (4)'},
 ];
 
 const CW_ANS = [
-  ['.','.',  'B','R','A','N','.'],
-  ['.','.','R','.','.','E','.'],
-  ['.','.','E','.','.','A','.'],
-  ['B','E','A','R','.','R','.'],
-  ['A','.','D','E','N','.','.'],
-  ['R','.','.','N','.','.', '.'],
-  ['N','E','R','D','.','.', '.'],
+  ['.','B','R','A','N','D'],
+  ['.','.','.','.','E','.'],
+  ['.','.','.','.','R','.'],
+  ['B','R','E','A','D','.'],
+  ['A','.','.','.','.','.'],
+  ['R','.','.',  'B','.','.'],
+  ['N','E','A','R','.','.'],
+  ['.','A','.','A','.','.'],
+  ['.','R','E','N','D','.'],
+  ['.','N','.','.','.','.'],
 ];
-const CW_ROWS=7,CW_COLS=7;
-const CW_NUMS={'0,2':1,'0,5':2,'3,0':3,'3,3':4,'4,2':5,'6,0':6};
+const CW_ROWS=10,CW_COLS=6;
+const CW_NUMS={'0,1':1,'0,4':2,'3,0':3,'5,3':4,'6,0':5,'6,1':6,'8,1':7};
 
 let cwSolved=new Set(),cwActive=null,cwDom=[];
 
@@ -336,8 +388,7 @@ function initS1(){
 }
 
 function cwCells(w){
-  return Array.from({length:w.word.length},(_,i)=>
-    w.dir==='A'?[w.r,w.c+i]:[w.r+i,w.c]);
+  return Array.from({length:w.word.length},(_,i)=>w.dir==='A'?[w.r,w.c+i]:[w.r+i,w.c]);
 }
 function cwClick(r,c){
   const ids=CW_WORDS.filter(w=>cwCells(w).some(([rr,cc])=>rr===r&&cc===c)).map(w=>w.id);
@@ -375,9 +426,7 @@ function submitWord(){
   if(cwActive===null)return;
   const w=CW_WORDS.find(x=>x.id===cwActive);
   if(!w||cwSolved.has(w.id))return;
-  if(typed!==w.word){
-    inp.classList.add('err');setTimeout(()=>inp.classList.remove('err'),350);return;
-  }
+  if(typed!==w.word){inp.classList.add('err');setTimeout(()=>inp.classList.remove('err'),350);return;}
   cwCells(w).forEach(([r,c],i)=>{
     const td=cwDom[r][c];const ns=td.querySelector('.cw-num');
     td.textContent=w.word[i];td.classList.remove('sel','sel-w');td.classList.add('ok');
@@ -395,7 +444,7 @@ function submitWord(){
 }
 
 // ═══════════════════════════════════════════════════
-//  STAGE 2 — Picture Math
+//  STAGE 2 — Picture Math (same as original fans version)
 // ═══════════════════════════════════════════════════
 const IMG={
   b:'https://raw.githubusercontent.com/pipit10364/fotobernard/main/Bernard%20(12).png',
@@ -438,141 +487,277 @@ function checkMath(){
 }
 
 // ═══════════════════════════════════════════════════
-//  STAGE 3 — Cryptogram
+//  STAGE 3 — Cryptogram (per-letter boxes, manual typing)
 //
-//  Message pool (random): motivational English phrases
-//  Questions in Indonesian, answers in Indonesian
+//  Secret message: KEEP FAITH IN THE PROCESS (20 letters)
 //
-//  Letter map (position in first answer introducing letter):
-//  DAVIDS:      D=1 A=2 V=3 I=4 S=6
-//  XAVIERA:     X=1 E=5 R=6
-//  QUESERASERA: Q=1 U=2
-//  PALEMBANG:   P=1 L=3 M=5 B=6 N=8 G=9
-//  CINCONG:     C=1 O=5
-//  AKU:         K=2
-//  JERMAN:      J=1
-//  FEBRUARI:    F=1
-//  THEO:        T=1 H=2
+//  1-to-1 cipher (unique number per letter):
+//    A=5  B=14  C=7  D=3  E=9  F=16  G=22  H=11  I=8
+//    J=25  K=2  L=17  M=6  N=13  O=4  P=21  Q=18
+//    R=10  S=15  T=1  U=12  V=19  X=23
 // ═══════════════════════════════════════════════════
 
-const LMAP={D:1,A:2,V:3,I:4,S:6,X:1,E:5,R:6,Q:1,U:2,P:1,L:3,M:5,B:6,N:8,G:9,C:1,O:5,K:2,J:1,F:1,T:1,H:2};
+const LMAP={
+  A:5,B:14,C:7,D:3,E:9,F:16,G:22,H:11,I:8,J:25,K:2,L:17,M:6,
+  N:13,O:4,P:21,Q:18,R:10,S:15,T:1,U:12,V:19,X:23
+};
+const LMAP_REV={};
+Object.entries(LMAP).forEach(([l,n])=>{LMAP_REV[n]=l;});
 
-const MSG_POOL_CRYPTO = [
-  "KEEP FAITH IN THE PROCESS",
-  "DARE TO DREAM DARE TO ACT",
-  "RISE STRONGER THAN BEFORE",
-  "EMBRACE EACH CHALLENGE",
-  "SHINE BRIGHT STAND TALL",
-];
-
-let cryptoMessage = '';
+const MSG_POOL_CRYPTO=["KEEP FAITH IN THE PROCESS","DARE TO DREAM DARE TO ACT","RISE STRONGER THAN BEFORE","EMBRACE EACH CHALLENGE","SHINE BRIGHT STAND TALL"];
+let MESSAGE="",MSG_TOTAL=0;
 
 const QUESTIONS=[
   {q:'Siapa roommate Bernard di Clash of Champions?',
-   a:'DAVIDS', display:'DAVIDS', reveals:['D','A','I','S']},
+   display:'DAVIDS', hint:'6 huruf, nama orang',
+   reveals:['D','A','V','I','S']},
   {q:'Cast perempuan lulusan KAIST di tim Dempo?',
-   a:'XAVIERA', display:'XAVIERA', reveals:['E','R']},
+   display:'XAVIERA', hint:'7 huruf',
+   reveals:['X','E','R']},
   {q:'Nama tim Bernard di Clash of Champions?',
-   a:'QUESERASERA', display:'QUESERASERA', reveals:['U']},
+   display:'QUE SERA SERA', hint:'3 kata dari lagu terkenal',
+   reveals:['Q','U']},
   {q:'Kota asal Bernard?',
-   a:'PALEMBANG', display:'PALEMBANG', reveals:['B','G','L','N','P']},
+   display:'PALEMBANG', hint:'Kota di Sumatera Selatan',
+   reveals:['P','L','M','B','N','G']},
   {q:'Nama anjing Bernard?',
-   a:'CINCONG', display:'CINCONG', reveals:['C','O']},
+   display:'CINCONG', hint:'7 huruf',
+   reveals:['C','O']},
   {q:'Judul puisi Chairil Anwar yang jadi soal di Ruangguru Champion?',
-   a:'AKU', display:'AKU', reveals:['K']},
+   display:'AKU', hint:'3 huruf, kata ganti orang pertama',
+   reveals:['K']},
   {q:'Salah satu bahasa yang dikuasai Bernard?',
-   a:'JERMAN', display:'JERMAN', reveals:['J']},
+   display:'JERMAN', hint:'Bahasa dari negara di Eropa Tengah',
+   reveals:['J']},
   {q:'Bernard lahir di bulan?',
-   a:'FEBRUARI', display:'FEBRUARI', reveals:['F']},
+   display:'FEBRUARI', hint:'Bulan kedua dalam setahun',
+   reveals:['F']},
   {q:'MVP RoC dari tim Bernard?',
-   a:'THEO', display:'THEO', reveals:['H','T']},
+   display:'THEO', hint:'4 huruf',
+   reveals:['T','H']},
 ];
 
-let revealed=new Set(),answeredCnt=0;
+let cipherRevealed=new Set(), answeredQ=new Set(), answeredCnt=0;
 
 function initS3(){
-  cryptoMessage = MSG_POOL_CRYPTO[Math.floor(Math.random()*MSG_POOL_CRYPTO.length)];
+  MESSAGE=MSG_POOL_CRYPTO[Math.floor(Math.random()*MSG_POOL_CRYPTO.length)];
+  MSG_TOTAL=MESSAGE.replace(/ /g,"").length;
+  cipherRevealed=new Set();answeredQ=new Set();answeredCnt=0;
+  document.getElementById('ac').textContent='0';
+  document.getElementById('p3').style.width='0%';
+  document.getElementById('unlockBtn').disabled=true;
+  document.getElementById('cipherAllKnown').style.display='none';
 
+  // ── Secret message input boxes ──
   const mw=document.getElementById('msgWords');mw.innerHTML='';
-  cryptoMessage.split(' ').forEach(word=>{
+  MESSAGE.split(' ').forEach(word=>{
     const wd=document.createElement('div');wd.className='msg-word';
     word.split('').forEach(letter=>{
+      const code=LMAP[letter];
       const lb=document.createElement('div');lb.className='msg-lbox';
-      const bl=document.createElement('div');bl.className='msg-blank';bl.dataset.letter=letter;
-      const nm=document.createElement('div');nm.className='msg-num';nm.textContent=LMAP[letter]||'?';
-      lb.appendChild(bl);lb.appendChild(nm);wd.appendChild(lb);
+      const inp=document.createElement('input');
+      inp.type='text';inp.maxLength=1;inp.className='msg-input';
+      inp.dataset.num=code;inp.dataset.answer=letter;
+      inp.addEventListener('input',e=>onMsgInput(e,letter));
+      inp.addEventListener('keydown',e=>{
+        if((e.key==='ArrowRight'||e.key==='Tab')&&!e.shiftKey){
+          e.preventDefault();
+          const all=Array.from(document.querySelectorAll('.msg-input'));
+          const idx=all.indexOf(inp);if(idx<all.length-1)all[idx+1].focus();
+        } else if(e.key==='ArrowLeft'||(e.key==='Tab'&&e.shiftKey)){
+          e.preventDefault();
+          const all=Array.from(document.querySelectorAll('.msg-input'));
+          const idx=all.indexOf(inp);if(idx>0)all[idx-1].focus();
+        }
+      });
+      const nm=document.createElement('div');nm.className='msg-num';nm.textContent=code;
+      lb.appendChild(inp);lb.appendChild(nm);wd.appendChild(lb);
     });
     mw.appendChild(wd);
   });
+  updateMsgProgress();
+
+  // ── Cipher key slots ──
+  const ckg=document.getElementById('ckGrid');ckg.innerHTML='';
+  Object.entries(LMAP).sort((a,b)=>a[1]-b[1]).forEach(([letter,code])=>{
+    const slot=document.createElement('div');
+    slot.className='ck-slot';slot.id=`ck${letter}`;
+    slot.innerHTML=`<span class="ck-n">${code}</span><span class="ck-l">?</span>`;
+    ckg.appendChild(slot);
+  });
+
+  // ── Questions ──
   const qc=document.getElementById('qCont');qc.innerHTML='';
   QUESTIONS.forEach((item,i)=>{
+    const reveals=item.reveals;
+    const badgeText=reveals.map(l=>`${l}=${LMAP[l]}`).join(', ');
     const div=document.createElement('div');div.className='qblock';div.id=`qb${i}`;
-    div.innerHTML=`<label>${i+1}. ${item.q}
-      <span class="ubadge">🔓 reveals: ${item.reveals.join(', ')}</span></label>
-      <input type="text" class="qinp" id="qi${i}" placeholder="Ketik jawaban…" autocomplete="off" spellcheck="false">`;
+
+    const labelRow=document.createElement('div');
+    labelRow.style.cssText='display:flex;justify-content:space-between;align-items:flex-start;gap:8px;margin-bottom:6px';
+    labelRow.innerHTML=`
+      <span style="font-size:13px;font-weight:700;color:var(--navy)">
+        ${i+1}. ${item.q}
+        <span class="ubadge">🔓 ${badgeText}</span>
+      </span>
+      <button onclick="showHint(${i})"
+        style="font-size:11px;padding:5px 9px;border:2px solid #ddd;border-radius:7px;
+               background:#f9f9f9;cursor:pointer;color:#888;font-weight:700;white-space:nowrap;flex-shrink:0">
+        💡 Hint
+      </button>`;
+    div.appendChild(labelRow);
+
+    const hintDiv=document.createElement('div');
+    hintDiv.id=`hint${i}`;
+    hintDiv.style.cssText='display:none;font-size:12px;color:var(--blue);font-weight:600;margin-bottom:6px;padding:5px 8px;background:#eef4ff;border-radius:6px';
+    hintDiv.textContent=item.hint;
+    div.appendChild(hintDiv);
+
+    div.appendChild(buildAnswerBoxes(item.display,i));
     qc.appendChild(div);
-    document.getElementById(`qi${i}`).addEventListener('input',e=>checkQ(e.target,item,i));
   });
 }
 
-function checkQ(inp,item,idx){
-  if(inp.value.toUpperCase().replace(/[\s.]/g,'')!==item.a)return;
-  inp.classList.add('answered');inp.disabled=true;
-  document.getElementById(`qb${idx}`).classList.add('answered');
-  item.reveals.forEach(l=>{
-    if(revealed.has(l))return;
-    revealed.add(l);
-    document.querySelectorAll(`.msg-blank[data-letter="${l}"]`).forEach(el=>{
-      el.textContent=l;el.classList.add('lit');
+function buildAnswerBoxes(displayStr,qIdx){
+  const wrap=document.createElement('div');
+  wrap.className='qans-wrap';wrap.id=`qans${qIdx}`;
+  displayStr.split('').forEach((ch)=>{
+    if(ch===' '){
+      const sp=document.createElement('div');sp.className='qans-space';
+      wrap.appendChild(sp);return;
+    }
+    const lb=document.createElement('div');lb.className='qans-lbox';
+    const code=LMAP[ch];
+    if(!code){
+      // Letter not in cipher — static display
+      const disp=document.createElement('div');
+      disp.style.cssText='width:26px;height:30px;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:800;color:#aaa;background:#f5f5f5;border-bottom:3px solid #ddd;border-radius:3px 3px 0 0';
+      disp.textContent=ch;
+      const nm=document.createElement('div');nm.className='qans-num';nm.textContent='—';
+      lb.appendChild(disp);lb.appendChild(nm);wrap.appendChild(lb);return;
+    }
+    const inp=document.createElement('input');
+    inp.type='text';inp.maxLength=1;inp.className='qans-inp';
+    inp.dataset.answer=ch;inp.dataset.code=code;inp.dataset.qidx=qIdx;
+    if(cipherRevealed.has(ch)){inp.value=ch;inp.classList.add('ok-cell');}
+    inp.addEventListener('input',e=>onQAnsInput(e,qIdx));
+    inp.addEventListener('keydown',e=>{
+      if((e.key==='ArrowRight'||e.key==='Tab')&&!e.shiftKey){
+        e.preventDefault();
+        const all=Array.from(document.querySelectorAll(`.qans-inp[data-qidx="${qIdx}"]`));
+        const idx=all.indexOf(inp);if(idx<all.length-1)all[idx+1].focus();
+      } else if(e.key==='ArrowLeft'||(e.key==='Tab'&&e.shiftKey)){
+        e.preventDefault();
+        const all=Array.from(document.querySelectorAll(`.qans-inp[data-qidx="${qIdx}"]`));
+        const idx=all.indexOf(inp);if(idx>0)all[idx-1].focus();
+      }
     });
-    addChip(l);
+    const nm=document.createElement('div');nm.className='qans-num';nm.textContent=code;
+    lb.appendChild(inp);lb.appendChild(nm);wrap.appendChild(lb);
   });
+  return wrap;
+}
+
+function onMsgInput(e,correctLetter){
+  const raw=e.target.value.toUpperCase().replace(/[^A-Z]/g,'');
+  const letter=raw.slice(-1);
+  e.target.value=letter;
+  e.target.classList.remove('ok-cell','err-cell');
+  if(!letter){updateMsgProgress();return;}
+  if(letter===correctLetter){
+    e.target.classList.add('ok-cell');
+    revealCipherKey(correctLetter);
+    const all=Array.from(document.querySelectorAll('.msg-input'));
+    const idx=all.indexOf(e.target);
+    const nextEmpty=all.slice(idx+1).find(b=>!b.classList.contains('ok-cell'));
+    if(nextEmpty)setTimeout(()=>nextEmpty.focus(),50);
+  } else {
+    e.target.classList.add('err-cell');
+  }
+  updateMsgProgress();
+}
+
+function onQAnsInput(e,qIdx){
+  const inp=e.target;
+  const raw=inp.value.toUpperCase().replace(/[^A-Z]/g,'');
+  const letter=raw.slice(-1);
+  inp.value=letter;
+  inp.classList.remove('ok-cell','err-cell');
+  if(!letter){checkQComplete(qIdx);return;}
+  const correct=inp.dataset.answer;
+  if(letter===correct){
+    inp.classList.add('ok-cell');
+    revealCipherKey(correct);
+    setTimeout(()=>{
+      const all=Array.from(document.querySelectorAll(`.qans-inp[data-qidx="${qIdx}"]`));
+      const idx=all.indexOf(inp);
+      const nextEmpty=all.slice(idx+1).find(b=>!b.classList.contains('ok-cell'));
+      if(nextEmpty)nextEmpty.focus();
+    },50);
+  } else {
+    inp.classList.add('err-cell');
+  }
+  checkQComplete(qIdx);
+}
+
+function revealCipherKey(letter){
+  if(cipherRevealed.has(letter))return;
+  cipherRevealed.add(letter);
+  const slot=document.getElementById(`ck${letter}`);
+  if(slot){slot.querySelector('.ck-l').textContent=letter;slot.classList.add('known');}
+  if(cipherRevealed.size===Object.keys(LMAP).length)
+    document.getElementById('cipherAllKnown').style.display='block';
+}
+
+function checkQComplete(qIdx){
+  if(answeredQ.has(qIdx))return;
+  const boxes=Array.from(document.querySelectorAll(`.qans-inp[data-qidx="${qIdx}"]`));
+  if(!boxes.length||!boxes.every(b=>b.value.toUpperCase()===b.dataset.answer))return;
+  answeredQ.add(qIdx);
+  document.getElementById(`qb${qIdx}`).classList.add('answered');
+  boxes.forEach(b=>{b.disabled=true;});
+  const hintBtn=document.querySelector(`#qb${qIdx} button`);
+  if(hintBtn)hintBtn.style.display='none';
   answeredCnt++;
   document.getElementById('ac').textContent=answeredCnt;
   document.getElementById('p3').style.width=(answeredCnt/9*100)+'%';
-  if(answeredCnt===9){
-    setTimeout(()=>{
-      document.querySelectorAll('.msg-blank:not(.lit)').forEach(el=>{
-        el.textContent=el.dataset.letter;el.classList.add('lit');
-      });
-    },300);
-    setTimeout(()=>document.getElementById('unlockBtn').disabled=false,800);
-  }
+  if(answeredCnt===9)document.getElementById('cipherAllKnown').style.display='block';
 }
 
-function addChip(l){
-  const dec=document.getElementById('decoder');dec.style.display='block';
-  const chip=document.createElement('div');chip.className='chip';
-  chip.innerHTML=`<span>${LMAP[l]}</span> = <strong>${l}</strong>`;
-  document.getElementById('decChips').appendChild(chip);
+function updateMsgProgress(){
+  let correct=0;
+  document.querySelectorAll('.msg-input').forEach(inp=>{
+    if(inp.value.toUpperCase()===inp.dataset.answer)correct++;
+  });
+  document.getElementById('msgProgLbl').textContent=`Terisi: ${correct} / ${MSG_TOTAL} huruf`;
+  if(correct===MSG_TOTAL)document.getElementById('unlockBtn').disabled=false;
 }
 
-// ═══════════════════════════════════════════════════
-//  Motivational message pool (random each session)
-// ═══════════════════════════════════════════════════
-const MSG_POOL = [
-  {msg: "Rise up and face each challenge head on.", sub: "Keep going — your hard work is never wasted! 💪"},
-  {msg: "Trust the process and keep moving ahead.", sub: "Great things take time. You're on the right path! 🌟"},
-  {msg: "Be bold, be brave, and never look back.", sub: "The world needs exactly what you have to offer! 🔥"},
-  {msg: "Dream big, act bold, and never settle.", sub: "Every step forward is a step closer to your dreams! ✨"},
-  {msg: "Build great habits and reach for the stars.", sub: "Consistency beats talent every single day. Keep it up! 🚀"},
-];
+function showHint(i){
+  const h=document.getElementById(`hint${i}`);
+  h.style.display=h.style.display==='none'?'block':'none';
+}
 
 // ═══════════════════════════════════════════════════
 //  Fireworks
 // ═══════════════════════════════════════════════════
+const MSG_POOL=[
+  {sub:"Keep going — your hard work is never wasted! 💪"},
+  {sub:"Great things take time. You're on the right path! 🌟"},
+  {sub:"The world needs exactly what you have to offer! 🔥"},
+  {sub:"Every step forward is a step closer to your dreams! ✨"},
+  {sub:"Consistency beats talent every single day. Keep it up! 🚀"},
+];
 function showFireworks(){
-  const chosen = MSG_POOL[Math.floor(Math.random()*MSG_POOL.length)];
-  document.getElementById('fw-decoded').textContent = '✨ ' + cryptoMessage + ' ✨';
-  document.getElementById('fw-sub').textContent = chosen.sub;
+  const chosen=MSG_POOL[Math.floor(Math.random()*MSG_POOL.length)];
+  document.getElementById('fw-decoded').textContent='✨ '+MESSAGE+' ✨';
+  document.getElementById('fw-sub').textContent=chosen.sub;
   document.getElementById('fw-overlay').classList.add('show');
   startFireworks();
 }
-
 function openScrapbook(){
   window.open('https://heyzine.com/flip-book/574e4123b6.html','_blank');
 }
-
 function startFireworks(){
   const canvas=document.getElementById('fw-canvas');
   const ctx=canvas.getContext('2d');
@@ -615,6 +800,147 @@ function setDots(n){
 }
 function goS2(){document.getElementById('s1').classList.remove('active');document.getElementById('s2').classList.add('active');setDots(2);initS2()}
 function goS3(){document.getElementById('s2').classList.remove('active');document.getElementById('s3').classList.add('active');setDots(3);initS3()}
+
+// ═══════════════════════════════════════════════════
+//  🎵 Background Music — Fun Chiptune (square wave + bass)
+// ═══════════════════════════════════════════════════
+let audioCtx=null,masterGain=null,musicPlaying=false;
+let melIdx=0,melNext=0,bassIdx=0,bassNext=0,schedTimer=null;
+
+const N={
+  C3:130.81,D3:146.83,E3:164.81,F3:174.61,G3:196,A3:220,B3:246.94,
+  C4:261.63,D4:293.66,E4:329.63,F4:349.23,G4:392,A4:440,B4:493.88,
+  C5:523.25,D5:587.33,E5:659.25,F5:698.46,G5:784,A5:880,B5:987.77,C6:1046.5,_:0
+};
+const BPM=160,B=60/BPM;
+
+const MEL=[
+  [N.E5,.25],[N.G5,.25],[N.C5,.5],[N.E5,.25],[N.D5,.25],
+  [N.C5,.5],[N.G4,.5],[N._,.5],[N.E5,.5],
+  [N.F5,.25],[N.A5,.25],[N.G5,.5],[N.F5,.25],[N.E5,.25],
+  [N.D5,1],[N._,.5],[N.C5,.5],
+  [N.E5,.25],[N.G5,.25],[N.A5,.5],[N.G5,.25],[N.E5,.25],
+  [N.C5,.5],[N.D5,.5],[N.E5,1],
+  [N.F5,.25],[N.G5,.25],[N.A5,.25],[N.G5,.25],[N.F5,.5],[N.E5,.5],
+  [N.D5,.5],[N.C5,1],[N._,.5],
+  [N.C5,.25],[N.E5,.25],[N.G5,.25],[N.C6,.25],[N.B5,.5],[N.A5,.5],
+  [N.G5,.5],[N.E5,.25],[N.D5,.25],[N.C5,1],
+  [N.A4,.25],[N.C5,.25],[N.E5,.25],[N.A5,.25],[N.G5,.5],[N.F5,.5],
+  [N.E5,.5],[N.D5,.25],[N.C5,.25],[N.B4,1],
+  [N.C5,.25],[N.D5,.25],[N.E5,.5],[N.G5,.25],[N.F5,.25],[N.E5,.5],
+  [N.D5,.25],[N.E5,.25],[N.F5,.5],[N.G5,1],
+  [N.A5,.25],[N.G5,.25],[N.F5,.25],[N.E5,.25],[N.D5,.5],[N.C5,.5],
+  [N.G4,.5],[N.C5,1],[N._,.5],
+  [N.G5,.5],[N.G5,.25],[N.A5,.25],[N.B5,.5],[N.G5,.5],
+  [N.A5,.5],[N.F5,.5],[N.G5,1],
+  [N.E5,.5],[N.E5,.25],[N.F5,.25],[N.G5,.5],[N.E5,.5],
+  [N.F5,.5],[N.D5,.5],[N.E5,1],
+  [N.C5,.25],[N.E5,.25],[N.G5,.25],[N.E5,.25],[N.C5,.25],[N.E5,.25],[N.G5,.25],[N.C6,.25],
+  [N.B5,.25],[N.A5,.25],[N.G5,.5],[N.F5,.25],[N.E5,.25],[N.D5,.5],
+  [N.E5,.25],[N.G5,.25],[N.C5,.5],[N.E5,.25],[N.D5,.25],[N.C5,.5],
+  [N.G4,1],[N._,.5],[N.C5,.5],
+  [N.E5,.5],[N.D5,.5],[N.C5,.5],[N.B4,.5],
+  [N.A4,.5],[N.G4,.5],[N.F4,.5],[N.E4,.5],
+  [N.G4,.25],[N.A4,.25],[N.B4,.25],[N.C5,.25],[N.D5,.5],[N.E5,.5],
+  [N.F5,.25],[N.E5,.25],[N.D5,.5],[N.C5,1],
+  [N.C5,.25],[N.E5,.25],[N.G5,.25],[N.C6,.25],[N.G5,.25],[N.E5,.25],[N.C5,.25],[N.G4,.25],
+  [N.A4,.25],[N.C5,.25],[N.E5,.25],[N.A5,.25],[N.E5,.25],[N.C5,.25],[N.A4,.25],[N.E4,.25],
+  [N.G4,.25],[N.B4,.25],[N.D5,.25],[N.G5,.25],[N.F5,.5],[N.E5,.5],
+  [N.C5,2],
+];
+const BASS=[
+  [N.C3,1],[N.G3,1],[N.A3,1],[N.E3,1],
+  [N.F3,1],[N.C3,1],[N.G3,1],[N.G3,.5],[N.B3,.5],
+  [N.C3,1],[N.G3,1],[N.F3,1],[N.C3,1],
+  [N.G3,1],[N.D3,1],[N.G3,.5],[N.B3,.5],[N.C3,1],
+  [N.C3,1],[N.E3,.5],[N.G3,.5],[N.A3,1],[N.E3,1],
+  [N.G3,1],[N.D3,1],[N.C3,1],[N.G3,1],
+  [N.A3,1],[N.E3,.5],[N.C3,.5],[N.F3,1],[N.C3,1],
+  [N.G3,1],[N.G3,.5],[N.D3,.5],[N.C3,1],[N.G3,1],
+  [N.G3,1],[N.G3,1],[N.A3,.5],[N.G3,.5],[N.G3,1],
+  [N.A3,1],[N.F3,1],[N.G3,1],[N.G3,1],
+  [N.E3,1],[N.E3,1],[N.F3,.5],[N.E3,.5],[N.E3,1],
+  [N.F3,1],[N.D3,1],[N.E3,1],[N.E3,1],
+  [N.C3,.5],[N.G3,.5],[N.C3,.5],[N.G3,.5],[N.C3,.5],[N.G3,.5],[N.C3,.5],[N.G3,.5],
+  [N.G2,.5],[N.D3,.5],[N.G2,.5],[N.D3,.5],[N.G2,1],[N.D3,1],
+  [N.C3,1],[N.G3,1],[N.E3,1],[N.G3,1],
+  [N.G2,1],[N.G2,1],[N.C3,1],[N.G3,1],
+  [N.C3,1],[N.G3,1],[N.A3,1],[N.E3,1],
+  [N.F3,1],[N.C3,1],[N.G3,1],[N.G3,1],
+  [N.G3,1],[N.A3,1],[N.B3,1],[N.C3,1],
+  [N.F3,1],[N.E3,1],[N.D3,1],[N.C3,1],
+  [N.C3,.5],[N.G3,.5],[N.E3,.5],[N.G3,.5],[N.C3,.5],[N.G3,.5],[N.E3,.5],[N.C3,.5],
+  [N.A2,.5],[N.E3,.5],[N.C3,.5],[N.E3,.5],[N.A2,.5],[N.E3,.5],[N.C3,.5],[N.E3,.5],
+  [N.G2,.5],[N.D3,.5],[N.B2,.5],[N.D3,.5],[N.G2,.5],[N.D3,.5],[N.F3,.5],[N.G3,.5],
+  [N.C3,2],
+];
+
+function initAudio(){
+  if(audioCtx)return true;
+  try{
+    const AC=window.AudioContext||window.webkitAudioContext;
+    if(!AC)return false;
+    audioCtx=new AC();masterGain=audioCtx.createGain();masterGain.gain.value=0.3;
+    masterGain.connect(audioCtx.destination);return true;
+  }catch(e){return false;}
+}
+function playNote(freq,startT,dur,type,gainPeak){
+  if(!freq)return;
+  const osc=audioCtx.createOscillator();const env=audioCtx.createGain();
+  osc.type=type;osc.frequency.value=freq;
+  env.gain.setValueAtTime(0.001,startT);env.gain.linearRampToValueAtTime(gainPeak,startT+0.015);
+  env.gain.setValueAtTime(gainPeak*.75,startT+dur*.5);env.gain.exponentialRampToValueAtTime(0.001,startT+dur*.93);
+  osc.connect(env);env.connect(masterGain);osc.start(startT);osc.stop(startT+dur+0.04);
+}
+function musicTick(){
+  if(!musicPlaying||!audioCtx)return;
+  const ahead=audioCtx.currentTime+0.5;
+  while(melNext<ahead){
+    const[f,beats]=MEL[melIdx];playNote(f,melNext,beats*B,'square',0.22);melNext+=beats*B;melIdx=(melIdx+1)%MEL.length;
+  }
+  while(bassNext<ahead){
+    const[f,beats]=BASS[bassIdx];playNote(f,bassNext,beats*B,'sawtooth',0.14);bassNext+=beats*B;bassIdx=(bassIdx+1)%BASS.length;
+  }
+  schedTimer=setTimeout(musicTick,150);
+}
+function toggleMusic(){
+  if(!initAudio()){alert('Web Audio API tidak didukung browser ini.');return;}
+  if(audioCtx.state==='suspended')audioCtx.resume();
+  musicPlaying=!musicPlaying;
+  const btn=document.getElementById('music-btn');const vb=document.getElementById('vol-bar');
+  if(musicPlaying){
+    btn.classList.add('playing');btn.textContent='🎶';
+    melIdx=0;bassIdx=0;melNext=audioCtx.currentTime+0.12;bassNext=melNext;
+    masterGain.gain.setValueAtTime(0.001,audioCtx.currentTime);
+    masterGain.gain.linearRampToValueAtTime(0.3,audioCtx.currentTime+0.4);
+    musicTick();vb.style.display='flex';
+  } else {
+    btn.classList.remove('playing');btn.textContent='🎵';
+    clearTimeout(schedTimer);
+    masterGain.gain.setTargetAtTime(0.001,audioCtx.currentTime,0.3);
+    setTimeout(()=>{if(!musicPlaying)masterGain.gain.value=0;},1500);
+    vb.style.display='none';
+  }
+}
+function setVolume(val){
+  if(masterGain&&musicPlaying)masterGain.gain.setTargetAtTime(val/330,audioCtx.currentTime,0.1);
+}
+
+// Auto-start on first interaction
+let musicAutoStarted=false;
+function tryAutoplay(){
+  if(musicAutoStarted)return;musicAutoStarted=true;
+  setTimeout(()=>{if(!musicPlaying)toggleMusic();},200);
+}
+document.addEventListener('click',tryAutoplay,{once:true});
+document.addEventListener('keydown',tryAutoplay,{once:true});
+document.addEventListener('touchstart',tryAutoplay,{once:true});
+
+// Auto-hide hint
+setTimeout(()=>{
+  const h=document.getElementById('music-hint');
+  if(h){h.style.opacity='0';setTimeout(()=>h.style.display='none',1000);}
+},4000);
 
 initS1();
 </script>
